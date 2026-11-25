@@ -1,0 +1,134 @@
+/* Revisione testi: side panel and note window / pannello laterale e finestra della nota */
+
+.cr-pannello {
+  padding: 12px;
+  font-size: var(--font-ui-small);
+}
+
+.cr-testa {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.cr-file {
+  font-weight: var(--font-semibold);
+  overflow-wrap: anywhere;
+}
+
+.cr-conta,
+.cr-vuoto,
+.cr-aiuto {
+  color: var(--text-muted);
+}
+
+.cr-nuova {
+  width: 100%;
+  margin-bottom: 12px;
+}
+
+.cr-scheda {
+  border: 1px solid var(--background-modifier-border);
+  border-left: 3px solid var(--interactive-accent);
+  border-radius: var(--radius-s);
+  padding: 8px 10px;
+  margin-bottom: 10px;
+  background: var(--background-primary);
+}
+
+.cr-tipo {
+  color: var(--text-muted);
+  font-size: var(--font-ui-smaller);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-bottom: 4px;
+}
+
+.cr-citazione {
+  margin: 0 0 6px 0;
+  padding: 2px 0 2px 8px;
+  border-left: 2px solid var(--background-modifier-border);
+  color: var(--text-muted);
+  font-style: italic;
+  overflow-wrap: anywhere;
+}
+
+.cr-segno {
+  color: var(--interactive-accent);
+  font-style: normal;
+}
+
+.cr-nota {
+  overflow-wrap: anywhere;
+  margin-bottom: 6px;
+}
+
+.cr-azioni {
+  display: flex;
+  gap: 14px;
+  font-size: var(--font-ui-smaller);
+}
+
+.cr-azioni a {
+  cursor: pointer;
+}
+
+.cr-azioni .cr-elimina {
+  color: var(--text-error);
+}
+
+/* numbered marker shown in the text instead of the full note / segno numerato al posto della nota */
+.cr-segno-nota {
+  display: inline-block;
+  min-width: 1.6em;
+  padding: 0 0.45em;
+  margin: 0 0.2em;
+  border-radius: 999px;
+  background: var(--interactive-accent);
+  color: var(--text-on-accent);
+  font-family: var(--font-interface);
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.6;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.cr-segno-nota.cr-segno-generale {
+  margin-left: 0;
+}
+
+.cr-finestra .cr-area {
+  width: 100%;
+  resize: vertical;
+  margin-bottom: 10px;
+}
+
+.cr-bottoni {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  margin-bottom: 6px;
+}
+
+.cr-aiuto {
+  font-size: var(--font-ui-smaller);
+  text-align: right;
+}
+
+/* Optional colours for tracked changes written as <del> and <ins> in a note:
+   red struck-through = removed, green = added.
+   Colori facoltativi per <del> (tolto, rosso barrato) e <ins> (aggiunto, verde). */
+del {
+  background: rgba(220, 60, 50, .24);
+  text-decoration: line-through;
+}
+ins {
+  background: rgba(60, 170, 90, .28);
+  text-decoration: none;
+}

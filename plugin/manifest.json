@@ -1,0 +1,10 @@
+{
+    "id": "revisione-testi",
+    "name": "Revisione testi",
+    "version": "0.4.0",
+    "minAppVersion": "1.5.0",
+    "description": "Review notes on a passage, at a point or on the whole text, saved inside the note itself. Italian and English interface.",
+    "author": "raMic62",
+    "isDesktopOnly": false,
+    "authorUrl": "https://github.com/raMic62"
+}
